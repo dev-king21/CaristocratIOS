@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="577" id="KGk-i7-Jjw" customClass="VehicleSubmitRateCell" customModule="Caristocrat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="577"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="576.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taE-OF-xfJ">
+                        <rect key="frame" x="0.0" y="10" width="456" height="556.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Tap to Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97J-5x-ZWW">
+                                <rect key="frame" x="8" y="10" width="93.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyCustomFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed Review (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFX-7G-ls6">
+                                <rect key="frame" x="8" y="149.5" width="184" height="188"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyCustomFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k1f-48-MWv" customClass="CustomUITextView" customModule="Caristocrat" customModuleProvider="target">
+                                <rect key="frame" x="10" y="351.5" width="436" height="145"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="ee0-gd-jlZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="What other shoppers should know before buying this car ?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u7G-fM-zZW">
+                                <rect key="frame" x="8" y="40" width="440" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Qfw-XM-CWw"/>
+                                </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdv-Oh-5v6" userLabel="Automatic">
+                                <rect key="frame" x="153" y="506.5" width="150" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWC-Sa-ouv">
+                                        <rect key="frame" x="29" y="12" width="91.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCustomFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="A5A-0J-boa"/>
+                                    <constraint firstItem="nWC-Sa-ouv" firstAttribute="centerY" secondItem="Gdv-Oh-5v6" secondAttribute="centerY" id="RQe-MW-8pk"/>
+                                    <constraint firstItem="nWC-Sa-ouv" firstAttribute="centerX" secondItem="Gdv-Oh-5v6" secondAttribute="centerX" id="Zzw-UB-bid"/>
+                                    <constraint firstAttribute="width" constant="150" id="faV-NE-nxd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-7E-ZHD">
+                                <rect key="frame" x="153" y="506.5" width="150" height="40"/>
+                                <connections>
+                                    <action selector="tappedOnSubmitButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Z0W-p0-qD5"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already submitted review." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-0f-D2h">
+                                <rect key="frame" x="121" y="518.5" width="213" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gKT-0f-D2h" firstAttribute="centerX" secondItem="Gdv-Oh-5v6" secondAttribute="centerX" id="1Kt-wp-reg"/>
+                            <constraint firstItem="Ste-7E-ZHD" firstAttribute="bottom" secondItem="Gdv-Oh-5v6" secondAttribute="bottom" id="2AC-MI-aWs"/>
+                            <constraint firstItem="97J-5x-ZWW" firstAttribute="top" secondItem="taE-OF-xfJ" secondAttribute="top" constant="10" id="4LO-gR-4P6"/>
+                            <constraint firstItem="k1f-48-MWv" firstAttribute="top" secondItem="WFX-7G-ls6" secondAttribute="bottom" constant="14" id="CHv-6Z-Xug"/>
+                            <constraint firstItem="Ste-7E-ZHD" firstAttribute="trailing" secondItem="Gdv-Oh-5v6" secondAttribute="trailing" id="EPF-rP-XMr"/>
+                            <constraint firstItem="Ste-7E-ZHD" firstAttribute="top" secondItem="Gdv-Oh-5v6" secondAttribute="top" id="EtO-V9-Jlg"/>
+                            <constraint firstItem="97J-5x-ZWW" firstAttribute="leading" secondItem="taE-OF-xfJ" secondAttribute="leading" constant="8" id="KPi-fS-kB9"/>
+                            <constraint firstAttribute="trailing" secondItem="k1f-48-MWv" secondAttribute="trailing" constant="10" id="L4N-1l-CAB"/>
+                            <constraint firstItem="u7G-fM-zZW" firstAttribute="top" secondItem="97J-5x-ZWW" secondAttribute="bottom" constant="8.5" id="LYS-eJ-aNU"/>
+                            <constraint firstItem="k1f-48-MWv" firstAttribute="leading" secondItem="taE-OF-xfJ" secondAttribute="leading" constant="10" id="N8N-4C-l3p"/>
+                            <constraint firstItem="Ste-7E-ZHD" firstAttribute="leading" secondItem="Gdv-Oh-5v6" secondAttribute="leading" id="NJQ-UW-rTh"/>
+                            <constraint firstItem="WFX-7G-ls6" firstAttribute="leading" secondItem="taE-OF-xfJ" secondAttribute="leading" constant="8" id="bTJ-m9-gDX"/>
+                            <constraint firstItem="k1f-48-MWv" firstAttribute="bottom" secondItem="Gdv-Oh-5v6" secondAttribute="top" constant="-10" id="c4p-lo-hSI"/>
+                            <constraint firstItem="WFX-7G-ls6" firstAttribute="top" secondItem="u7G-fM-zZW" secondAttribute="bottom" constant="10" id="eJh-Q9-mBq"/>
+                            <constraint firstItem="Ste-7E-ZHD" firstAttribute="height" secondItem="Gdv-Oh-5v6" secondAttribute="height" id="j0e-RT-vl7"/>
+                            <constraint firstItem="u7G-fM-zZW" firstAttribute="leading" secondItem="taE-OF-xfJ" secondAttribute="leading" constant="8" id="j4d-GU-bbh"/>
+                            <constraint firstAttribute="bottom" secondItem="Gdv-Oh-5v6" secondAttribute="bottom" constant="10" id="jLE-km-dzT"/>
+                            <constraint firstItem="Ste-7E-ZHD" firstAttribute="width" secondItem="Gdv-Oh-5v6" secondAttribute="width" id="mkR-qm-cdx"/>
+                            <constraint firstAttribute="trailing" secondItem="u7G-fM-zZW" secondAttribute="trailing" constant="8" id="pNC-vh-ndF"/>
+                            <constraint firstItem="Gdv-Oh-5v6" firstAttribute="centerX" secondItem="taE-OF-xfJ" secondAttribute="centerX" id="rEw-xg-vbt"/>
+                            <constraint firstItem="gKT-0f-D2h" firstAttribute="centerY" secondItem="Gdv-Oh-5v6" secondAttribute="centerY" id="wPi-UB-zoi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="taE-OF-xfJ" secondAttribute="trailing" id="Alj-nV-6ZA"/>
+                    <constraint firstItem="taE-OF-xfJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L6c-4d-rI4"/>
+                    <constraint firstAttribute="bottom" secondItem="taE-OF-xfJ" secondAttribute="bottom" constant="10" id="ndo-Lr-ckq"/>
+                    <constraint firstItem="taE-OF-xfJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rcN-jp-UQv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="alreadySubmittedLabel" destination="gKT-0f-D2h" id="gWE-Mh-ptQ"/>
+                <outlet property="reviewTextView" destination="k1f-48-MWv" id="RiL-A3-XYB"/>
+                <outlet property="submitReviewButton" destination="Gdv-Oh-5v6" id="ut1-bS-Awf"/>
+                <outlet property="tableView" destination="u7G-fM-zZW" id="F3Y-HK-BET"/>
+                <outlet property="tableViewHeight" destination="Qfw-XM-CWw" id="44l-rb-5Tx"/>
+            </connections>
+            <point key="canvasLocation" x="-1501" y="201"/>
+        </tableViewCell>
+    </objects>
+</document>

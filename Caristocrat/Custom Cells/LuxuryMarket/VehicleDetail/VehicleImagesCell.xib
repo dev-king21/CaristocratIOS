@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="VehicleImagesCell" customModule="Caristocrat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wph-xE-N1j" userLabel="Parent">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="100"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-fh-pV2">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="100"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkA-gG-0WP" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="100"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvb-pf-vsH" userLabel="TopBar">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-E4-dab" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Z5L-9s-UeX"/>
+                                            <constraint firstAttribute="height" constant="40" id="aWA-Fg-BVV"/>
+                                        </constraints>
+                                        <state key="normal" image="backbtn_white">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedOnBack" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AKU-kG-OsA"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="duO-TW-xzc">
+                                        <rect key="frame" x="168" y="15" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-ac-tEX" customClass="FaveButton" customModule="FaveButton">
+                                                <rect key="frame" x="-168" y="-15.5" width="30" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="xen-T4-ZBW"/>
+                                                </constraints>
+                                                <state key="normal" image="heart"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                        <color key="value" red="0.98039215690000003" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="dotFirstColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="dotSecondColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="circleFromColor">
+                                                        <color key="value" red="0.98039215690000003" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="circleToColor">
+                                                        <color key="value" red="0.98039215690000003" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwf-N2-IFS" userLabel="Share">
+                                                <rect key="frame" x="-168" y="-15.5" width="0.0" height="26"/>
+                                                <state key="normal" image="share"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="tappedOnShare" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9NK-7T-vUC"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gci-My-D1f">
+                                                <rect key="frame" x="-168" y="-15.5" width="30" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Kh9-u1-tWP"/>
+                                                </constraints>
+                                                <state key="normal" image="add_fav">
+                                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="tappedOnFav:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WF3-eV-WNH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="afJ-E4-dab" firstAttribute="top" secondItem="Yvb-pf-vsH" secondAttribute="top" constant="5" id="16T-lx-VbT"/>
+                                    <constraint firstItem="afJ-E4-dab" firstAttribute="leading" secondItem="Yvb-pf-vsH" secondAttribute="leading" id="c3p-Zf-1ma"/>
+                                    <constraint firstAttribute="trailing" secondItem="duO-TW-xzc" secondAttribute="trailing" constant="10" id="cMl-FH-gLW"/>
+                                    <constraint firstItem="duO-TW-xzc" firstAttribute="top" secondItem="Yvb-pf-vsH" secondAttribute="top" constant="15" id="pty-yd-Iaa"/>
+                                    <constraint firstAttribute="height" constant="40" id="yQ1-Wz-NjG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LVh-fh-pV2" firstAttribute="bottom" secondItem="LkA-gG-0WP" secondAttribute="bottom" id="3CZ-fm-yNk"/>
+                            <constraint firstItem="LVh-fh-pV2" firstAttribute="top" secondItem="LkA-gG-0WP" secondAttribute="top" id="4dq-UE-ruy"/>
+                            <constraint firstItem="LVh-fh-pV2" firstAttribute="leading" secondItem="LkA-gG-0WP" secondAttribute="leading" id="7Zi-OR-cql"/>
+                            <constraint firstItem="LVh-fh-pV2" firstAttribute="trailing" secondItem="LkA-gG-0WP" secondAttribute="trailing" id="GdR-3u-api"/>
+                            <constraint firstItem="Yvb-pf-vsH" firstAttribute="top" secondItem="Wph-xE-N1j" secondAttribute="top" id="H0w-Ne-4Vu"/>
+                            <constraint firstItem="LVh-fh-pV2" firstAttribute="height" secondItem="LkA-gG-0WP" secondAttribute="height" id="HED-qS-F3b"/>
+                            <constraint firstAttribute="width" secondItem="Wph-xE-N1j" secondAttribute="height" multiplier="16:9" id="KYZ-0R-kq7"/>
+                            <constraint firstAttribute="bottom" secondItem="LkA-gG-0WP" secondAttribute="bottom" id="WCm-Dg-wMR"/>
+                            <constraint firstItem="LkA-gG-0WP" firstAttribute="top" secondItem="Wph-xE-N1j" secondAttribute="top" id="aMo-iO-c6n"/>
+                            <constraint firstAttribute="trailing" secondItem="LkA-gG-0WP" secondAttribute="trailing" id="cny-XK-Fwa"/>
+                            <constraint firstItem="LkA-gG-0WP" firstAttribute="leading" secondItem="Wph-xE-N1j" secondAttribute="leading" id="jh3-Ns-0m5"/>
+                            <constraint firstAttribute="trailing" secondItem="Yvb-pf-vsH" secondAttribute="trailing" id="jht-39-LBD"/>
+                            <constraint firstItem="LVh-fh-pV2" firstAttribute="width" secondItem="LkA-gG-0WP" secondAttribute="width" id="rB6-jj-QgD"/>
+                            <constraint firstAttribute="bottom" secondItem="LkA-gG-0WP" secondAttribute="bottom" id="s7t-ff-fTq"/>
+                            <constraint firstItem="Yvb-pf-vsH" firstAttribute="leading" secondItem="Wph-xE-N1j" secondAttribute="leading" id="yVc-XH-JTw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wph-xE-N1j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6cX-jg-iRf"/>
+                    <constraint firstItem="Wph-xE-N1j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fnT-gu-SdY"/>
+                    <constraint firstAttribute="bottom" secondItem="Wph-xE-N1j" secondAttribute="bottom" constant="0.5" id="vpd-ev-hUB"/>
+                    <constraint firstAttribute="trailing" secondItem="Wph-xE-N1j" secondAttribute="trailing" id="zq4-I2-rTM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addFavoriteButton" destination="Gci-My-D1f" id="hSs-1e-Cx9"/>
+                <outlet property="backButton" destination="afJ-E4-dab" id="fun-x3-kuy"/>
+                <outlet property="featureSlideShow" destination="LkA-gG-0WP" id="4bg-SH-bDC"/>
+                <outlet property="heartButton" destination="hyG-ac-tEX" id="6Sh-Sc-VlC"/>
+                <outlet property="shareButton" destination="vwf-N2-IFS" id="sKx-J1-Sam"/>
+            </connections>
+            <point key="canvasLocation" x="-758" y="-216"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_fav" width="6" height="23"/>
+        <image name="backbtn_white" width="21" height="12"/>
+        <image name="heart" width="16" height="15"/>
+        <image name="image_placeholder" width="100" height="100"/>
+        <image name="share" width="22" height="26"/>
+    </resources>
+</document>
