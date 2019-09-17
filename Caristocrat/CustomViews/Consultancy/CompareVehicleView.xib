@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompareVehicleView" customModule="Caristocrat" customModuleProvider="target">
+            <connections>
+                <outlet property="collectView" destination="Xj6-v5-pVz" id="cQM-zf-BbC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xj6-v5-pVz">
+                    <rect key="frame" x="0.0" y="78" width="375" height="529"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z4X-Y7-Bc3">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owm-fH-Lmy">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="kCh-ct-3HG"/>
+                    </constraints>
+                    <state key="normal" title="COMPARE CARS">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyShadow" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="applyCustomFont" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tappedOnCompare" destination="-1" eventType="touchUpInside" id="3ps-PP-M5g"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select two or more cars and see the detailed comparison" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-sA-b4V">
+                    <rect key="frame" x="10" y="30" width="355" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Owm-fH-Lmy" secondAttribute="trailing" id="0XB-SS-DlZ"/>
+                <constraint firstAttribute="trailing" secondItem="Xj6-v5-pVz" secondAttribute="trailing" id="86u-NW-Mki"/>
+                <constraint firstItem="9MH-sA-b4V" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Bp7-FN-etc"/>
+                <constraint firstItem="9MH-sA-b4V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FAr-ix-IDs"/>
+                <constraint firstItem="Xj6-v5-pVz" firstAttribute="top" secondItem="9MH-sA-b4V" secondAttribute="bottom" constant="33.5" id="VOj-Bn-ygx"/>
+                <constraint firstAttribute="trailing" secondItem="9MH-sA-b4V" secondAttribute="trailing" constant="10" id="XTE-Mt-pNV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Owm-fH-Lmy" secondAttribute="bottom" id="YkO-LH-GGL"/>
+                <constraint firstItem="9MH-sA-b4V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="dNX-vj-cBi"/>
+                <constraint firstItem="Owm-fH-Lmy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tej-CL-dBA"/>
+                <constraint firstItem="Owm-fH-Lmy" firstAttribute="top" secondItem="Xj6-v5-pVz" secondAttribute="bottom" constant="10" id="wV9-oJ-ZNE"/>
+                <constraint firstItem="Xj6-v5-pVz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y7P-nc-561"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriveWayPaymentTVC" rowHeight="165" id="KGk-i7-Jjw" customClass="DriveWayPaymentTVC" customModule="Caristocrat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="164.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdW-2k-GXc">
+                        <rect key="frame" x="0.0" y="0.0" width="470" height="10"/>
+                        <color key="backgroundColor" red="0.93717581029999997" green="0.93730717900000005" blue="0.9371345043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Q5x-be-3Jr"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVEAWAY PAYMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-4k-Px2">
+                        <rect key="frame" x="16" y="26" width="150.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.38819998500000003" green="0.38825863599999999" blue="0.38818150759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsB-65-6so">
+                        <rect key="frame" x="16" y="51" width="86.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.48231011629999998" green="0.48238128419999998" blue="0.4822877049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 250,000.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc0-ZW-puK">
+                        <rect key="frame" x="366.5" y="51" width="87.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.48231011629999998" green="0.48238128419999998" blue="0.4822877049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insurance (1st Year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e7-lN-oWQ">
+                        <rect key="frame" x="16" y="73" width="115.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.48231011629999998" green="0.48238128419999998" blue="0.4822877049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-1W-izt">
+                        <rect key="frame" x="407.5" y="73" width="46.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.48231011629999998" green="0.48238128419999998" blue="0.4822877049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o2-38-iP7">
+                        <rect key="frame" x="16" y="95" width="94.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.48231011629999998" green="0.48238128419999998" blue="0.4822877049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 550.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-Yf-sJW">
+                        <rect key="frame" x="392" y="95" width="62" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.48231011629999998" green="0.48238128419999998" blue="0.4822877049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Upfront Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecx-7k-gIk">
+                        <rect key="frame" x="16" y="117" width="151.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.38819998500000003" green="0.38825863599999999" blue="0.38818150759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 550.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAA-St-AFT">
+                        <rect key="frame" x="382" y="117" width="72" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.38819998500000003" green="0.38825863599999999" blue="0.38818150759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IvR-4k-Px2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1cv-ZG-K2s"/>
+                    <constraint firstItem="Qc0-ZW-puK" firstAttribute="centerY" secondItem="BsB-65-6so" secondAttribute="centerY" id="7Jp-dH-oaw"/>
+                    <constraint firstItem="BsB-65-6so" firstAttribute="top" secondItem="IvR-4k-Px2" secondAttribute="bottom" constant="8" id="9Ae-HI-tvU"/>
+                    <constraint firstItem="eNy-Yf-sJW" firstAttribute="trailing" secondItem="9xD-1W-izt" secondAttribute="trailing" id="9Gr-3s-BVa"/>
+                    <constraint firstItem="3e7-lN-oWQ" firstAttribute="leading" secondItem="BsB-65-6so" secondAttribute="leading" id="AoH-23-Y9W"/>
+                    <constraint firstItem="BsB-65-6so" firstAttribute="leading" secondItem="IvR-4k-Px2" secondAttribute="leading" id="NOr-LA-iW5"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IvR-4k-Px2" secondAttribute="trailing" constant="16" id="RHH-hG-2o2"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ecx-7k-gIk" secondAttribute="bottom" constant="16" id="Rls-22-Bne"/>
+                    <constraint firstItem="9xD-1W-izt" firstAttribute="trailing" secondItem="EAA-St-AFT" secondAttribute="trailing" id="SMg-cz-0oh"/>
+                    <constraint firstAttribute="trailing" secondItem="EAA-St-AFT" secondAttribute="trailing" constant="16" id="WjI-Qf-pF9"/>
+                    <constraint firstItem="Qc0-ZW-puK" firstAttribute="trailing" secondItem="9xD-1W-izt" secondAttribute="trailing" id="WkW-1H-ztt"/>
+                    <constraint firstItem="IdW-2k-GXc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XM8-vc-d9N"/>
+                    <constraint firstItem="EAA-St-AFT" firstAttribute="centerY" secondItem="ecx-7k-gIk" secondAttribute="centerY" id="ZrH-r9-NcC"/>
+                    <constraint firstItem="3o2-38-iP7" firstAttribute="top" secondItem="3e7-lN-oWQ" secondAttribute="bottom" constant="8" id="cbt-Zn-Cjx"/>
+                    <constraint firstItem="3e7-lN-oWQ" firstAttribute="top" secondItem="BsB-65-6so" secondAttribute="bottom" constant="8" id="eEf-PT-csh"/>
+                    <constraint firstAttribute="trailing" secondItem="IdW-2k-GXc" secondAttribute="trailing" id="hZS-n5-BsU"/>
+                    <constraint firstItem="ecx-7k-gIk" firstAttribute="leading" secondItem="3e7-lN-oWQ" secondAttribute="leading" id="nJl-XV-ky2"/>
+                    <constraint firstItem="IdW-2k-GXc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nbw-h8-kzs"/>
+                    <constraint firstItem="3o2-38-iP7" firstAttribute="leading" secondItem="3e7-lN-oWQ" secondAttribute="leading" id="pxn-xI-Uu4"/>
+                    <constraint firstItem="9xD-1W-izt" firstAttribute="centerY" secondItem="3e7-lN-oWQ" secondAttribute="centerY" id="qHq-l8-aBN"/>
+                    <constraint firstItem="ecx-7k-gIk" firstAttribute="top" secondItem="3o2-38-iP7" secondAttribute="bottom" constant="8" id="ruN-7c-lSO"/>
+                    <constraint firstItem="eNy-Yf-sJW" firstAttribute="centerY" secondItem="3o2-38-iP7" secondAttribute="centerY" id="sRV-S8-CBC"/>
+                    <constraint firstItem="IvR-4k-Px2" firstAttribute="top" secondItem="IdW-2k-GXc" secondAttribute="bottom" constant="16" id="sSz-Bh-xQ1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDownPayment" destination="Qc0-ZW-puK" id="tPW-FI-XdQ"/>
+                <outlet property="lblInsurance" destination="9xD-1W-izt" id="7uD-Ed-bRV"/>
+                <outlet property="lblRegistrationFee" destination="eNy-Yf-sJW" id="l9K-Ff-nyn"/>
+                <outlet property="lblTitleDownPayment" destination="BsB-65-6so" id="H7B-kf-p2S"/>
+                <outlet property="lblTotalUpfrontPayment" destination="EAA-St-AFT" id="dIn-0D-Piu"/>
+            </connections>
+            <point key="canvasLocation" x="-51.200000000000003" y="27.436281859070466"/>
+        </tableViewCell>
+    </objects>
+</document>

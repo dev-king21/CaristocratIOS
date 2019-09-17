@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ModelCell" customModule="Caristocrat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="63"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQX-jG-UOn" userLabel="Parent">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="63"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGJ-gn-uWy">
+                                <rect key="frame" x="0.0" y="5" width="279" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmG-wZ-015">
+                                        <rect key="frame" x="10" y="0.0" width="259" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="applyCustomFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpe-r6-eF6">
+                                        <rect key="frame" x="262" y="36" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="PB9-mX-vYO"/>
+                                            <constraint firstAttribute="height" constant="15" id="cfW-tD-7bC"/>
+                                        </constraints>
+                                        <state key="normal" image="circularcheck"/>
+                                        <state key="selected" image="circularcheck_sel"/>
+                                        <connections>
+                                            <action selector="checkBoxClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nOk-My-aWl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OmG-wZ-015" firstAttribute="leading" secondItem="UGJ-gn-uWy" secondAttribute="leading" constant="10" id="2lf-lg-h81"/>
+                                    <constraint firstAttribute="trailing" secondItem="OmG-wZ-015" secondAttribute="trailing" constant="10" id="PK9-Gu-9dM"/>
+                                    <constraint firstItem="OmG-wZ-015" firstAttribute="top" secondItem="UGJ-gn-uWy" secondAttribute="top" id="di9-Yt-HNo"/>
+                                    <constraint firstAttribute="bottom" secondItem="wpe-r6-eF6" secondAttribute="bottom" constant="2" id="gKa-EI-luA"/>
+                                    <constraint firstAttribute="trailing" secondItem="wpe-r6-eF6" secondAttribute="trailing" constant="2" id="p3z-Va-gyL"/>
+                                    <constraint firstAttribute="bottom" secondItem="OmG-wZ-015" secondAttribute="bottom" id="vyo-QE-L85"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UGJ-gn-uWy" firstAttribute="leading" secondItem="TQX-jG-UOn" secondAttribute="leading" id="gnG-eP-KOY"/>
+                            <constraint firstAttribute="trailing" secondItem="UGJ-gn-uWy" secondAttribute="trailing" id="yZE-t5-bRc"/>
+                            <constraint firstItem="UGJ-gn-uWy" firstAttribute="top" secondItem="TQX-jG-UOn" secondAttribute="top" constant="5" id="z53-ug-CJX"/>
+                            <constraint firstAttribute="bottom" secondItem="UGJ-gn-uWy" secondAttribute="bottom" constant="5" id="zsz-vI-NWb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TQX-jG-UOn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2G1-RW-crt"/>
+                <constraint firstAttribute="bottom" secondItem="TQX-jG-UOn" secondAttribute="bottom" id="Amu-cq-xIj"/>
+                <constraint firstAttribute="trailing" secondItem="TQX-jG-UOn" secondAttribute="trailing" id="dSh-Rb-06h"/>
+                <constraint firstItem="TQX-jG-UOn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lgK-To-rED"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="279" height="63"/>
+            <connections>
+                <outlet property="btnCheckBox" destination="wpe-r6-eF6" id="dBS-NU-baC"/>
+                <outlet property="lblName" destination="OmG-wZ-015" id="Yts-uz-AWH"/>
+                <outlet property="parentView" destination="UGJ-gn-uWy" id="TyX-P9-gYs"/>
+            </connections>
+            <point key="canvasLocation" x="-109" y="-21"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="circularcheck" width="64" height="64"/>
+        <image name="circularcheck_sel" width="33" height="33"/>
+    </resources>
+</document>
