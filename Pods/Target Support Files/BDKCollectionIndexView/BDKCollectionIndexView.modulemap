@@ -1,6 +1,0 @@
-framework module BDKCollectionIndexView {
-  umbrella header "BDKCollectionIndexView-umbrella.h"
-
-  export *
-  module * { export * }
-}
