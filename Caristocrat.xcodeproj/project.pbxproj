@@ -2063,7 +2063,7 @@
 				TargetAttributes = {
 					C3475AA81F21EDF70069A22A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = VCF5XZ2JGZ;
+						DevelopmentTeam = 5362Y4AMXU;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2830,7 +2830,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = VCF5XZ2JGZ;
+				DEVELOPMENT_TEAM = 5362Y4AMXU;
 				INFOPLIST_FILE = "$(SRCROOT)/Caristocrat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clientapp.caristocrat;
@@ -2855,7 +2855,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VCF5XZ2JGZ;
+				DEVELOPMENT_TEAM = 5362Y4AMXU;
 				INFOPLIST_FILE = "$(SRCROOT)/Caristocrat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clientapp.caristocrat;
