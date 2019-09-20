@@ -37,6 +37,7 @@ struct BodyStyleModel: Codable {
     let name : String?
     let childSegment : [ChildSegment]?
     var isChecked = false
+    var group : String?
     
     enum CodingKeys: String, CodingKey {
         
@@ -66,7 +67,9 @@ struct ChildSegment: Codable {
     let selected_icon : String?
     let un_selected_icon : String?
     let name : String?
-    let child_types : [String]?
+    var child_types : [String]?
+    var group: String?
+    var version: String?
     
     enum CodingKeys: String, CodingKey {
         
@@ -88,5 +91,27 @@ struct ChildSegment: Codable {
         child_types = try values.decodeIfPresent([String].self, forKey: .child_types)
     }
     
+}
+
+struct Group {
+    let group: String
+    var isChecked: Bool
+    
+    init(group: String, checked: Bool) {
+        self.group = group
+        self.isChecked = checked
+    }
+}
+
+struct GroupData {
+    let id: Int
+    let group: String
+    let version: String
+    
+    init(id: Int, group: String, version: String) {
+        self.id = id
+        self.group = group
+        self.version = version
+    }
 }
 

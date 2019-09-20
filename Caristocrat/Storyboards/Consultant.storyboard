@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxR-Vp-1Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2537" y="81"/>
+            <point key="canvasLocation" x="-3186" y="81"/>
         </scene>
         <!--COMPARE-->
         <scene sceneID="6wb-fH-eIT">
@@ -183,7 +183,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SY5-Kn-FpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1918" y="83"/>
+            <point key="canvasLocation" x="-2559" y="81"/>
+        </scene>
+        <!--BACK TO COMPARISION MAIN-->
+        <scene sceneID="0JW-rW-cXR">
+            <objects>
+                <viewController storyboardIdentifier="CompareCarSubController" title="BACK TO COMPARISION MAIN" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ng5-Y9-5Zz" customClass="CompareCarSubController" customModule="Caristocrat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f29-Sg-Mlc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXE-Ib-MwL" userLabel="Parent">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="df8-gD-N4F">
+                                        <rect key="frame" x="85" y="20" width="205" height="102.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="df8-gD-N4F" secondAttribute="height" multiplier="2:1" id="inn-gT-gY1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-Lq-9h9" customClass="CompareBySubSegmentView" customModule="Caristocrat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="186.5" width="375" height="416.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALOON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zee-Sr-ufP">
+                                        <rect key="frame" x="85" y="142.5" width="205" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Zee-Sr-ufP" firstAttribute="width" secondItem="df8-gD-N4F" secondAttribute="width" id="3w5-64-WKQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="7qg-Lq-9h9" secondAttribute="bottom" id="KvX-9L-fTf"/>
+                                    <constraint firstItem="7qg-Lq-9h9" firstAttribute="top" secondItem="Zee-Sr-ufP" secondAttribute="bottom" constant="20" id="Lh3-P9-Kq9"/>
+                                    <constraint firstItem="df8-gD-N4F" firstAttribute="height" secondItem="gXE-Ib-MwL" secondAttribute="height" multiplier="0.17" id="Mt8-gp-Ro8"/>
+                                    <constraint firstItem="df8-gD-N4F" firstAttribute="centerX" secondItem="gXE-Ib-MwL" secondAttribute="centerX" id="Q4n-xy-fLE"/>
+                                    <constraint firstItem="Zee-Sr-ufP" firstAttribute="top" secondItem="df8-gD-N4F" secondAttribute="bottom" constant="20" id="bGe-bt-i9e"/>
+                                    <constraint firstAttribute="trailing" secondItem="7qg-Lq-9h9" secondAttribute="trailing" id="mer-9I-5MI"/>
+                                    <constraint firstItem="7qg-Lq-9h9" firstAttribute="leading" secondItem="gXE-Ib-MwL" secondAttribute="leading" id="ohl-mI-xAU"/>
+                                    <constraint firstItem="df8-gD-N4F" firstAttribute="top" secondItem="gXE-Ib-MwL" secondAttribute="top" constant="20" id="w2l-fH-GtV"/>
+                                    <constraint firstItem="Zee-Sr-ufP" firstAttribute="centerX" secondItem="gXE-Ib-MwL" secondAttribute="centerX" id="wPK-07-SS5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pii-Ot-vdC" firstAttribute="trailing" secondItem="gXE-Ib-MwL" secondAttribute="trailing" id="Xb1-mD-DKt"/>
+                            <constraint firstItem="pii-Ot-vdC" firstAttribute="bottom" secondItem="gXE-Ib-MwL" secondAttribute="bottom" id="isM-HJ-Dh1"/>
+                            <constraint firstItem="gXE-Ib-MwL" firstAttribute="leading" secondItem="pii-Ot-vdC" secondAttribute="leading" id="lt4-Fe-hHe"/>
+                            <constraint firstItem="gXE-Ib-MwL" firstAttribute="top" secondItem="pii-Ot-vdC" secondAttribute="top" id="pwR-kK-wgq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pii-Ot-vdC"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="compareBySubSegmentView" destination="7qg-Lq-9h9" id="Bua-f8-BgX"/>
+                        <outlet property="segmentImage" destination="df8-gD-N4F" id="J56-10-vLI"/>
+                        <outlet property="segmentName" destination="Zee-Sr-ufP" id="aMg-Gp-EVV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdB-9P-UOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1914.4000000000001" y="79.610194902548727"/>
         </scene>
         <!--Results-->
         <scene sceneID="GfL-d0-DUg">
@@ -214,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeS-9v-wus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1271" y="82"/>
+            <point key="canvasLocation" x="-1271" y="81"/>
         </scene>
         <!--Vehicle Review Contoller-->
         <scene sceneID="JHM-75-2rd">

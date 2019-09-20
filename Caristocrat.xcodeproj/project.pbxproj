@@ -411,6 +411,11 @@
 		E1F9168D20A5BF4500547BDA /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9168420A5BF4500547BDA /* LeftViewController.swift */; };
 		E1F9169020A5BF4500547BDA /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9168720A5BF4500547BDA /* RightViewController.swift */; };
 		E1F9169320A5C10700547BDA /* ResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9169220A5C10700547BDA /* ResponseWrapper.swift */; };
+		F108A2DF23334785006F1E90 /* SubSegmentHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17B844E23324983009B294F /* SubSegmentHeaderCell.xib */; };
+		F17B844A233226CD009B294F /* CompareCarSubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B8449233226CD009B294F /* CompareCarSubController.swift */; };
+		F17B844D233231B1009B294F /* CompareBySubSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B844C233231B1009B294F /* CompareBySubSegmentView.swift */; };
+		F17B845023324983009B294F /* SubSegmentHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B844F23324983009B294F /* SubSegmentHeaderCell.swift */; };
+		F17B845123333A9E009B294F /* CompareBySubSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17B844B233231B0009B294F /* CompareBySubSegmentView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -830,6 +835,11 @@
 		E1F9168420A5BF4500547BDA /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		E1F9168720A5BF4500547BDA /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		E1F9169220A5C10700547BDA /* ResponseWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseWrapper.swift; sourceTree = "<group>"; };
+		F17B8449233226CD009B294F /* CompareCarSubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareCarSubController.swift; sourceTree = "<group>"; };
+		F17B844B233231B0009B294F /* CompareBySubSegmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompareBySubSegmentView.xib; sourceTree = "<group>"; };
+		F17B844C233231B1009B294F /* CompareBySubSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareBySubSegmentView.swift; sourceTree = "<group>"; };
+		F17B844E23324983009B294F /* SubSegmentHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubSegmentHeaderCell.xib; sourceTree = "<group>"; };
+		F17B844F23324983009B294F /* SubSegmentHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSegmentHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1079,6 +1089,7 @@
 			isa = PBXGroup;
 			children = (
 				25917CB021F9BA1D008F9AE9 /* CompareCarController.swift */,
+				F17B8449233226CD009B294F /* CompareCarSubController.swift */,
 				2593243F220037F400D6C1A1 /* CompareResultController.swift */,
 				25BFBEB92201E331009A8A91 /* VehicleReviewContoller.swift */,
 				253A259F22033DC90033B358 /* AllReviewsController.swift */,
@@ -1107,6 +1118,8 @@
 				25917CC021FC771B008F9AE9 /* CompareByCarView.swift */,
 				25917CC221FC85AC008F9AE9 /* CompareBySegmentView.xib */,
 				25917CC421FC85C7008F9AE9 /* CompareBySegmentView.swift */,
+				F17B844B233231B0009B294F /* CompareBySubSegmentView.xib */,
+				F17B844C233231B1009B294F /* CompareBySubSegmentView.swift */,
 				25917CCA21FC8F7E008F9AE9 /* SegmentCell.swift */,
 				25917CCB21FC8F7E008F9AE9 /* SegmentCell.xib */,
 				25BEEE8D220AF8F0009278DC /* CompareVehicleView.swift */,
@@ -1240,6 +1253,8 @@
 				25917CB821FB4A4E008F9AE9 /* SelectedCarsCell.xib */,
 				25917CC621FC8ABD008F9AE9 /* SegmentHeaderCell.swift */,
 				25917CC721FC8ABD008F9AE9 /* SegmentHeaderCell.xib */,
+				F17B844F23324983009B294F /* SubSegmentHeaderCell.swift */,
+				F17B844E23324983009B294F /* SubSegmentHeaderCell.xib */,
 				2593244122004B0600D6C1A1 /* Result */,
 			);
 			path = Compare;
@@ -2109,7 +2124,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				814B46D422FAF3C500529B79 /* GoogleService-Info+(1).plist in Resources */,
+				F108A2DF23334785006F1E90 /* SubSegmentHeaderCell.xib in Resources */,
 				814B46D522FAF3C500529B79 /* GoogleService-Info.plist in Resources */,
+				F17B845123333A9E009B294F /* CompareBySubSegmentView.xib in Resources */,
 				C37BD52F1F2897BE00CB4CDF /* Raleway-ExtraLightItalic.ttf in Resources */,
 				256C71C621317D6B00E61884 /* CountriesViewController.storyboard in Resources */,
 				25D03CEE21C789DA00051677 /* AddCarCell.xib in Resources */,
@@ -2435,6 +2452,7 @@
 				C3BCB4941F288FEC008F27F3 /* FadeInOut_View.swift in Sources */,
 				25BEEE92220B2681009278DC /* SettingsModel.swift in Sources */,
 				2530753F2114623400676D54 /* TutorialViewCell.swift in Sources */,
+				F17B844D233231B1009B294F /* CompareBySubSegmentView.swift in Sources */,
 				8372CC7A21E8D02700BCB74B /* InAppWebView.swift in Sources */,
 				253189BF217B328A004248B8 /* ProfileAPI.swift in Sources */,
 				2590E0FF21186F0900DEE99F /* ValidationsUtility.swift in Sources */,
@@ -2443,6 +2461,7 @@
 				7B64911B23293B2700334A2D /* AllSubscriptionsModel.swift in Sources */,
 				2569CE432178D79C0038F4D6 /* ImagePickerHelper.swift in Sources */,
 				E1F9168C20A5BF4500547BDA /* HomeViewController.swift in Sources */,
+				F17B844A233226CD009B294F /* CompareCarSubController.swift in Sources */,
 				25FA57602176FD5E00224D5F /* Region.swift in Sources */,
 				83C1E4C821E7882800CDADBE /* Bid_close_at.swift in Sources */,
 				25D03CF321C7A0BD00051677 /* MyTradeCarCell.swift in Sources */,
@@ -2529,6 +2548,7 @@
 				253A258A22030A8D0033B358 /* VehicleUserRateItemCell.swift in Sources */,
 				5557F4F51FDE6D200028A86C /* IGStepperView.swift in Sources */,
 				25F935752171AEF7001AFBF8 /* VehicleDetailController.swift in Sources */,
+				F17B845023324983009B294F /* SubSegmentHeaderCell.swift in Sources */,
 				65B82D5D20774952002CE7DE /* EmptyTableViewBackgroundView.swift in Sources */,
 				E1F9168D20A5BF4500547BDA /* LeftViewController.swift in Sources */,
 				25BEEE7922086AD0009278DC /* TopBidCell.swift in Sources */,
@@ -2833,7 +2853,7 @@
 				DEVELOPMENT_TEAM = 5362Y4AMXU;
 				INFOPLIST_FILE = "$(SRCROOT)/Caristocrat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clientapp.caristocrat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clientapp.caristocrat.jcj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2858,7 +2878,7 @@
 				DEVELOPMENT_TEAM = 5362Y4AMXU;
 				INFOPLIST_FILE = "$(SRCROOT)/Caristocrat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clientapp.caristocrat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clientapp.caristocrat.jcj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

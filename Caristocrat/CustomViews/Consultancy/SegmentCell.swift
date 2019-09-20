@@ -10,9 +10,10 @@ class SegmentCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func setData(segment: ChildSegment) {
-        self.titleLabel.text = segment.name?.uppercased() ?? ""
+    func setData(groupData: GroupData) {
+        self.titleLabel.text = groupData.version
     }
     
     
 }
+

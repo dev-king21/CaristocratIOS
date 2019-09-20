@@ -6,10 +6,10 @@ import DZNEmptyDataSet
 
 class CompareBySegmentView: UIView {
     
-    var cells: [CellWithSection] = [(SegmentCell.identifier,1, SegmentHeaderCell.identifier)]
+    var cells: [CellWithSection] = [(SegmentCell.identifier, 1, SegmentHeaderCell.identifier)]
     var segments: [BodyStyleModel] = []
     
-    private var selectedSegment: (section: Int, row: Int)?
+    private var selectedSegment: Int!
     var isComparisonSubscribed = false
     var shouldShowSubscribed = false
 
@@ -41,8 +41,8 @@ class CompareBySegmentView: UIView {
 
     func registerCells() {
         for cell in cells {
-            self.tableView.register(UINib(nibName: cell.headerIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier:  cell.headerIdentifier)
             self.tableView.register(UINib(nibName: cell.identifier, bundle: nil), forCellReuseIdentifier: cell.identifier)
+            self.tableView.register(UINib(nibName: cell.headerIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier:  cell.headerIdentifier)
         }
     }
     
@@ -74,10 +74,10 @@ class CompareBySegmentView: UIView {
         }, showLoader: false)
     }
     
-    func moveToResult(section: Int,row: Int) {
+    func moveToResult(row: Int) {
         let compareCarResult = CompareResultController.instantiate(fromAppStoryboard: .Consultant)
-        compareCarResult.segmentId = self.segments[section].childSegment?[row].id ?? 0
-        compareCarResult.navtitle = self.segments[section].childSegment?[row].name ?? "Results"
+        compareCarResult.segmentId = self.segments[row].id ?? 0
+        compareCarResult.navtitle = self.segments[row].name ?? "Results"
         Utility().topViewController()?.navigationController?.pushViewController(compareCarResult, animated: true)
     }
     
@@ -86,37 +86,21 @@ class CompareBySegmentView: UIView {
 extension CompareBySegmentView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: SegmentCell.identifier)
-        
-        if let segmentCell = cell as? SegmentCell, let segment = segments[indexPath.section].childSegment?[indexPath.row] {
-            segmentCell.setData(segment: segment)
-        }
-        
-        return cell!
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return segments[section].isChecked ? segments[section].childSegment?.count ?? 0 : 0
+        return 0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedSegment = (indexPath.section, indexPath.row)
         
-        if AppStateManager.sharedInstance.isUserLoggedIn() {
-            showResult()
-        } else {
-            shouldShowSubscribed = true
-            let signinController = SignInViewController.instantiate(fromAppStoryboard: .Login)
-            signinController.isGuest = true
-            signinController.guestLabelText = "CANCEL"
-            Utility().topViewController()?.present(signinController, animated: true, completion: nil)
-        }
     }
     
     func showResult() {
         if isComparisonSubscribed {
-            guard let segment = self.selectedSegment else { return }
-            self.moveToResult(section: segment.section, row: segment.row)
+            guard let segmentId = self.selectedSegment else { return }
+            self.moveToResult(row: segmentId)
         } else {
             //show alert
             let subscribeViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "ComparisonSubscribeViewController") as! ComparisonSubscribeViewController
@@ -124,8 +108,8 @@ extension CompareBySegmentView: UITableViewDataSource, UITableViewDelegate {
             subscribeViewController.modalTransitionStyle = .crossDissolve
             subscribeViewController.subscribedSuccessfully = {
                 self.isComparisonSubscribed = true
-                if let segment = self.selectedSegment {
-                    self.moveToResult(section: segment.section, row: segment.row)
+                if let segmentId = self.selectedSegment {
+                    self.moveToResult(row: segmentId)
                 }
             }
             Utility().topViewController()?.present(subscribeViewController, animated: true, completion: nil)
@@ -159,13 +143,23 @@ extension CompareBySegmentView: UITableViewDataSource, UITableViewDelegate {
 extension CompareBySegmentView: EventPerformDelegate {
     func didActionPerformed(eventName: EventName, data: Any) {
         if eventName == .didTapOnCollapseExpand {
-            if self.segments[data as! Int].isChecked  {
-                self.segments[data as! Int].isChecked = false
-            } else {
-                self.segments[data as! Int].isChecked = true
-            }
+            self.selectedSegment = data as? Int
             
-            self.tableView.reloadData()
+            if (self.segments[selectedSegment].childSegment?.count ?? 0 > 0) {
+                let compareCarSubSegment = CompareCarSubController.instantiate(fromAppStoryboard: .Consultant)
+                compareCarSubSegment.segment = self.segments[selectedSegment]
+                Utility().topViewController()?.navigationController?.pushViewController(compareCarSubSegment, animated: true)
+            } else {
+                if AppStateManager.sharedInstance.isUserLoggedIn() {
+                    showResult()
+                } else {
+                    shouldShowSubscribed = true
+                    let signinController = SignInViewController.instantiate(fromAppStoryboard: .Login)
+                    signinController.isGuest = true
+                    signinController.guestLabelText = "CANCEL"
+                    Utility().topViewController()?.present(signinController, animated: true, completion: nil)
+                }
+            }
         }
     }
 }
