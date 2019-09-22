@@ -21,8 +21,8 @@ struct Limited_edition_specs_array : Codable {
 	let engine : [Specs]?
 	let performance : [Specs]?
 	let transmission  : [Specs ]?
-	let brakes : [Specs]?
-	let suspension : [Specs]?
+	/*let brakes : [Specs]?
+	let suspension : [Specs]?*/
 	let wheels_Tyres : [Specs]?
 	let fuel : [Specs]?
 	let emission : [Specs]?
@@ -36,8 +36,8 @@ struct Limited_edition_specs_array : Codable {
 		case engine = "Engine"
 		case performance = "Performance"
 		case transmission  = "Transmission "
-		case brakes = "Brakes"
-		case suspension = "Suspension"
+		/*case brakes = "Brakes"
+		case suspension = "Suspension"*/
 		case wheels_Tyres = "Wheels_Tyres"
 		case fuel = "Fuel"
 		case emission = "Emission"
@@ -52,8 +52,8 @@ struct Limited_edition_specs_array : Codable {
 		engine = try values.decodeIfPresent([Specs].self, forKey: .engine)
 		performance = try values.decodeIfPresent([Specs].self, forKey: .performance)
 		transmission  = try values.decodeIfPresent([Specs].self, forKey: .transmission)
-		brakes = try values.decodeIfPresent([Specs].self, forKey: .brakes)
-		suspension = try values.decodeIfPresent([Specs].self, forKey: .suspension)
+		/*brakes = try values.decodeIfPresent([Specs].self, forKey: .brakes)
+		suspension = try values.decodeIfPresent([Specs].self, forKey: .suspension)*/
 		wheels_Tyres = try values.decodeIfPresent([Specs].self, forKey: .wheels_Tyres)
 		fuel = try values.decodeIfPresent([Specs].self, forKey: .fuel)
 		emission = try values.decodeIfPresent([Specs].self, forKey: .emission)

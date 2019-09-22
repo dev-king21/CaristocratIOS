@@ -112,8 +112,8 @@ class CompareResultController: BaseViewController, SpreadsheetViewDataSource, Sp
             specs += item.limited_edition_specs_array?.engine ?? []
             specs += item.limited_edition_specs_array?.performance ?? []
             specs += item.limited_edition_specs_array?.transmission ?? []
-            specs += item.limited_edition_specs_array?.brakes ?? []
-            specs += item.limited_edition_specs_array?.suspension ?? []
+            /*specs += item.limited_edition_specs_array?.brakes ?? []
+            specs += item.limited_edition_specs_array?.suspension ?? []*/
             specs += item.limited_edition_specs_array?.wheels_Tyres ?? []
             specs += item.limited_edition_specs_array?.fuel ?? []
             specs += item.limited_edition_specs_array?.emission ?? []
